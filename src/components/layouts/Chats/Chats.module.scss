@@ -1,0 +1,33 @@
+.wrapper {
+    max-height: 100%;
+    overflow-y: hidden;
+}
+.friend-div {
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+        transition: all 0.2s ease-out;
+        background-color: var(--background-color);
+    }
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name-mess {
+    margin-left: 10px;
+}
+.name {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.mess {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 4px;
+}

@@ -1,0 +1,19 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --font-family: 'Fira Sans', sans-serif;
+    --font-family2: 'Varela Round', sans-serif;
+    --background-color: #ffd900;
+    --text-color: #222;
+    --white-color: #fff;
+}
+html {
+    font-size: 62.5%;
+    background-color: #222;
+    font-family: var(--font-family2);
+}

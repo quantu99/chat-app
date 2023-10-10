@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px;
+    background-color: #ffea71;
+    border-top-right-radius: 10px;
+    min-height: 67px;
+}
+.name {
+    font-size: 1.8rem;
+}
+.icon {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    cursor: pointer;
+    &:hover {
+        color: var(--background-color);
+        transition: all 0.2s ease-out;
+    }
+}
