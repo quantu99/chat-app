@@ -68,7 +68,7 @@ function Register() {
     return (
         <div className={cx('register', 'grid')}>
             <div className={cx('row', 'no-gutters')}>
-                <div className={cx('wrapper', 'l-5')}>
+                <div className={cx('wrapper', 'col', 'l-5', 'm-8', 'c-10')}>
                     <p className={cx('brand')}>Dreamer's Chat</p>
                     <p className={cx('title')}>Create new account</p>
 
@@ -99,17 +99,6 @@ function Register() {
                             </label>
                             <input className={cx('input')} id="password" placeholder="Enter password" type="password" />
                         </div>
-                        {/* <div className={cx('input-div')}>
-                            <label className={cx('label')} htmlFor="confirm">
-                                Confirm password
-                            </label>
-                            <input
-                                className={cx('input')}
-                                id="confirm"
-                                placeholder="Enter password again"
-                                type="password"
-                            />
-                        </div> */}
                         <div className={cx('input-div-file')}>
                             <label className={cx('label-file')} htmlFor="file">
                                 <img className={cx('avatar-file')} src={avatar} alt="empty-image" />

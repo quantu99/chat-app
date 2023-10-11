@@ -23,7 +23,7 @@ function Login() {
     return (
         <div className={'grid'}>
             <div className={cx('row', 'no-gutters')}>
-                <div className={cx('wrapper', 'l-5')}>
+                <div className={cx('wrapper', 'col', 'l-5', 'm-8', 'c-10')}>
                     <p className={cx('brand')}>Dreamer's Chat</p>
                     <p className={cx('title')}>Login</p>
 

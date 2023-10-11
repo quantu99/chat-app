@@ -5,10 +5,10 @@ import Messages from '../Messages/Messages';
 import styles from './Chat.module.scss';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
-function Chat() {
+function Chat({ haveChat, back }) {
     return (
         <div className={cx('wrapper')}>
-            <MessNav />
+            <MessNav back={back} haveChat={haveChat} />
             <Messages />
             <Input />
         </div>

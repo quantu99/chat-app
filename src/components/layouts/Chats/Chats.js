@@ -6,7 +6,7 @@ import { db } from '../../../firebase';
 import { AuthContext } from '../../../context/AuthContext';
 import { ChatContext } from '../../../context/ChatContext';
 const cx = classNames.bind(styles);
-function Chats() {
+function Chats({ click }) {
     const [chats, setChats] = useState([]);
     const { currentUser } = useContext(AuthContext);
     const { dispatch } = useContext(ChatContext);
@@ -25,7 +25,7 @@ function Chats() {
         dispatch({ type: 'CHANGE_USER', payload: u });
     };
     return (
-        <div className={cx('wrapper')}>
+        <div onClick={() => click()} className={cx('wrapper')}>
             {Object.entries(chats)
                 ?.sort((a, b) => b[1].date - a[1].date)
                 .map((chat) => (

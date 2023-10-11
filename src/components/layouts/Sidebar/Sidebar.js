@@ -4,12 +4,12 @@ import Navbar from '../Navbar/Navbar';
 import styles from './Sidebar.module.scss';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
-function Sidebar() {
+function Sidebar({ click }) {
     return (
         <div className={cx('wrapper')}>
             <Navbar />
             <Friends />
-            <Chats />
+            <Chats click={click} />
         </div>
     );
 }
